@@ -2,7 +2,7 @@ with open("sample.txt", "r", encoding="utf-8") as f:
     text = f.read()
 def count_words(text):
     words_counts={}
-    low_text=text.lower().split(" ")
+    low_text=text.lower().split()
     for char in low_text:
         if char not in words_counts:
             words_counts[char]=1
